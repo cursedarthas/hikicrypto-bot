@@ -43,14 +43,3 @@ class CryptoCurrency:
         else:
             return "Market Cup not found"
         
-
-Bitcoin = CryptoCurrency('Bitcoin', 'https://cryptorank.io/?ysclid=luo1098dvl570589879')
-
-Price = Bitcoin.getPrice('sc-50f3633f-0 sc-28f598be-1 jXsWTV nZrBG')
-Change = Bitcoin.getChangePrice('sc-50f3633f-0 sc-92cddc74-0 glCbMx koiTCg')
-Market_Cup = Bitcoin.getMarketCup('sc-67ec7576-0 bwSdbV sc-ebc32dcf-0 bZbfEj')
-
-print("Bitcoin: ", end="")
-bitcoin_data = [Price, Change, Market_Cup]
-for item in bitcoin_data:
-    print(item, end=" ")
